@@ -36,3 +36,14 @@ number.addEventListener('input', function () {
   else
     numberError.textContent = "E.g.: 91 8499875245 - Country code follow by space and 10 digit number";
 });
+
+//uc4
+const pwd = document.querySelector('#pwd');
+const passwordError = document.querySelector('.pwd-error');
+pwd.addEventListener('input', function () {
+  let passwordPattern = RegExp('^(?=[0-9 A-Z a-z !@#$%^&*();:]{8,}$)(?=.*[A-Z]{1,})(?=.*[0-9]{1,})(?=.*[!@#$%^&*();:]{1,}).*$');
+  if (passwordPattern.test(pwd.value))
+    passwordError.textContent = "";
+  else
+    passwordError.textContent = "minimum 8 Characters, atleast 1 Upper Case, atleast 1 numeric, exactly 1 Special Character";
+});

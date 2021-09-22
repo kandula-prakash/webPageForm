@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="C:\Users\prakash kandula\htmlDemo\form.css" />
+    <title>HTML Input Form</title>
+  </head>
+  <body>
+    <header class="headerContainer"><h1>HTML 5 Input Form</h1></header>
+    <form class="formContainer">
+      <div class="form-input">
+        <div class="form-left">
+          <label for="text">Name:</label>
+        </div>
+        <div class="form-right">
+          <input type="text" id="text" name="text" required />
+          <error-output class="text-error" for="text"></error-output>
+        </div>
+      </div>
+      <div class="form-input">
+        <div class="form-left">
+          <label for="pwd">Password: </label>
+        </div>
+        <div class="form-right">
+          <input type="password" id="pwd" name="pwd" required />
+          <error-output for="pwd" class="pwd-error"></error-output>
+        </div>
+      </div>
+      <div class="form-input">
+        <div class="form-left">
+          <label for="email">Email:</label>
+        </div>
+        <div class="form-right">
+          <input type="email" id="email" name="email" required />
+          <error-output for="email" class="email-error"></error-output>
+        </div>
+      </div>
+      <div class="form-input">
+        <div class="form-left">
+          <label for="url">URL:</label>
+        </div>
+        <div class="form-right">
+          <input type="url" id="url" name="url" required />
+        </div>
+      </div>
+      <div class="form-input">
+        <div class="form-left">
+          <label for="number">Age:</label>
+        </div>
+        <div class="form-right">
+          <input type="number" id="number" name="number" min="0" required />
+        </div>
+      </div>
+      <div class="form-input">
+        <div class="form-left">
+          <label for="tel">Phone Number:</label>
+        </div>
+        <div class="form-right">
+          <input type="tel" id="tel" name="tel" required />
+          <error-output for="tel" class="tel-error"></error-output>
+        </div>
+      </div>
+      <div class="form-input">
+        <div class="form-left">
+          <label for="search">Search: </label>
+        </div>
+        <div class="form-right">
+          <input type="search" id="search" name="search" required />
+        </div>
+      </div>
+      <div class="nativeDateTimePicker form-input">
+        <div class="form-left">
+          <label for="startDate">Choose a date and time:</label>
+        </div>
+        <div class="form-right">
+          <input
+            type="datetime-local"
+            id="startDate"
+            name="startDate"
+            required
+          />
+          <span class="validity"></span>
+        </div>
+      </div>
+      <div class="form-input">
+        <div class="form-left">
+          <label for="salary">Choose your salary</label>
+        </div>
+        <div class="salary">
+          <input
+            type="range"
+            name="salary"
+            id="salary"
+            min="300000"
+            max="500000"
+            step="100"
+            value="400000"
+            required
+          />
+          <output class="salary-output" for="salary">400000</output>
+        </div>
+      </div>
+      <div class="form-input">
+        <button class="btn">Submit</button>
+      </div>
+    </form>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

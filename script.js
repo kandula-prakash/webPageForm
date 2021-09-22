@@ -34,5 +34,5 @@ number.addEventListener('input', function () {
   if (numberPattern.test(number.value))
     numberError.textContent = "";
   else
-    numberError.textContent = "E.g.: 91 9919819801 - Country code follow by space and 10 digit number";
+    numberError.textContent = "E.g.: 91 8499875245 - Country code follow by space and 10 digit number";
 });
